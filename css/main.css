@@ -142,6 +142,21 @@ a {
   background-color: #fff;
 }
 
+.header-part__info {
+  animation: animates 0.4s;
+  animation-direction: alternate;
+}
+
+@keyframes animates {
+  0% {
+    transform: translateY(-70px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .header-part__info-on {
   display: block;
 }
