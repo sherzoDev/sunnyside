@@ -284,7 +284,7 @@ a {
 
 .hero-part__title-box::after {
   position: absolute;
-  top: 125%;
+  top: 150%;
   left: 45%;
   width: 30px;
   height: 107px;
@@ -292,6 +292,18 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   content: "";
+  animation: arrow 0.9s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero-part__title {
@@ -336,7 +348,7 @@ a {
   }
 
   .hero-part__title-box::after {
-    top: 160%;
+    top: 350%;
     left: 48%;
   }
 }
